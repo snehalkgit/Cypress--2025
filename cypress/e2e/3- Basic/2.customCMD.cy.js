@@ -8,7 +8,6 @@ describe("verify custom command in cypress", () => {
         cy.get('button[type="submit"]').click()
 
         cy.OHRMlogin('Admin', 'admin123')
-
         cy.get('.oxd-text--h6').should('have.text', 'Dashboard')
 
     })
