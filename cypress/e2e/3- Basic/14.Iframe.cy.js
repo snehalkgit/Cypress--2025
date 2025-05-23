@@ -49,7 +49,7 @@ describe('verify iFrame in cypress', () => {
         iframeBody.find('p[class="sub-heading"]').first().should('have.text', 'Who Are We?')
     })
 
-    it.only('iframe approach 5 -with custom command', () => {
+    it('iframe approach 5 -with custom command', () => {
         cy.visit('https://www.webdriveruniversity.com/IFrame/index.html')
 
         cy.iframe('#frame').find('p[class="sub-heading"]').first().should('have.text', 'Who Are We?')
