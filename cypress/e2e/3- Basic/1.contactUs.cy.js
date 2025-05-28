@@ -18,7 +18,7 @@ describe("verify contact us page",()=>{ //suite
         cy.get('h1').should('have.text','Thank You for your Message!')
     })
 
-    it.skip("verify contact us page for in-valid data", () => {
+    it("verify contact us page for in-valid data", () => {
         cy.visit('https://www.webdriveruniversity.com/Contact-Us/contactus.html')
 
         cy.get('[name="first_name"]').type('dipanshu')
